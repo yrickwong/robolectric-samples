@@ -1,0 +1,39 @@
+buildscript {
+    dependencies {
+        repositories {
+            mavenLocal()
+            mavenCentral()
+        }
+
+        classpath 'com.android.tools.build:gradle:1.0.0'
+        classpath 'com.github.jcandksolutions.gradle:android-unit-test:2.0.2'
+    }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 16
+    buildToolsVersion '21.1.2'
+
+    defaultConfig {
+        applicationId "com.example"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_6
+        targetCompatibility JavaVersion.VERSION_1_6
+    }
+}
+
+apply plugin: 'android-unit-test'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.10'
+    testCompile "org.robolectric:robolectric:3.0-SNAPSHOT"
+}
