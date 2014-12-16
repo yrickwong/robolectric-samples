@@ -1,6 +1,5 @@
 package com.example.activity;
 
-import android.app.Activity;
 import android.view.Menu;
 
 import com.example.R;
@@ -17,8 +16,8 @@ import static org.robolectric.Shadows.shadowOf;
 public class MainActivityTest {
 
   @Test
-  public void onCreate_shouldInflateTheMenu() throws Exception {
-    Activity activity = Robolectric.setupActivity(MainActivity.class);
+  public void onCreate_shouldInflateLayout() throws Exception {
+    final MainActivity activity = Robolectric.setupActivity(MainActivity.class);
 
     final Menu menu = shadowOf(activity).getOptionsMenu();
     assertThat(menu.findItem(R.id.item1).getTitle()).isEqualTo("First menu item");

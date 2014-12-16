@@ -9,7 +9,9 @@
         android:targetSdkVersion="21"/>
 
     <application android:theme="@style/Theme.MyTheme">
-        <activity android:name=".activity.MainActivity">
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/application">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>

@@ -1,15 +1,15 @@
 package com.example.activity;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.GridLayout;
-import android.widget.Toolbar;
 
 import com.example.R;
 
-public class MainActivity extends Activity {
+public class MainActivity extends ActionBarActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,7 @@ public class MainActivity extends Activity {
     setContentView(R.layout.activity_main);
 
     Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-    setActionBar(toolbar);
+    setSupportActionBar(toolbar);
 
     GridLayout layout = (GridLayout) findViewById(R.id.grid_layout);
     layout.requestLayout();
@@ -43,5 +43,4 @@ public class MainActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
   }
-
 }
