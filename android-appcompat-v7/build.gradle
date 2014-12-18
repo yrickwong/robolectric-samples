@@ -1,7 +1,6 @@
 buildscript {
     dependencies {
         repositories {
-            mavenLocal()
             mavenCentral()
         }
 
@@ -27,11 +26,6 @@ android {
 }
 
 apply plugin: "android-unit-test"
-
-repositories {
-    mavenLocal()
-    mavenCentral()
-}
 
 dependencies {
     compile "com.android.support:appcompat-v7:21.0.3"

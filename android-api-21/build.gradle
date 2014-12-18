@@ -1,20 +1,19 @@
 buildscript {
     dependencies {
         repositories {
-            mavenLocal()
             mavenCentral()
         }
 
-        classpath 'com.android.tools.build:gradle:1.0.0'
-        classpath 'com.github.jcandksolutions.gradle:android-unit-test:2.0.2'
+        classpath "com.android.tools.build:gradle:1.0.0"
+        classpath "com.github.jcandksolutions.gradle:android-unit-test:2.0.2"
     }
 }
 
-apply plugin: 'com.android.application'
+apply plugin: "com.android.application"
 
 android {
     compileSdkVersion 21
-    buildToolsVersion '21.1.2'
+    buildToolsVersion "21.1.2"
 
     defaultConfig {
         applicationId "com.example"
@@ -26,15 +25,10 @@ android {
     }
 }
 
-apply plugin: 'android-unit-test'
-
-repositories {
-    mavenLocal()
-    mavenCentral()
-}
+apply plugin: "android-unit-test"
 
 dependencies {
-    testCompile 'junit:junit:4.10'
+    testCompile "junit:junit:4.10"
     testCompile "org.assertj:assertj-core:1.7.0"
     testCompile "org.robolectric:robolectric:3.0-SNAPSHOT"
 }
