@@ -3,6 +3,9 @@ language: android
 android:
   components:
     - build-tools-21.1.2
+    - android-16
+    - android-19
+    - android-21
 
 script:
     - TERM=dumb ./gradlew test
