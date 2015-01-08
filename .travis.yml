@@ -8,4 +8,4 @@ android:
     - android-21
 
 script:
-    - TERM=dumb ./gradlew test
+    - TERM=dumb ./gradlew -i test
