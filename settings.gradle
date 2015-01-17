@@ -1,1 +1,5 @@
-include ':android-api-16', ':android-api-19', ':android-api-21', ':android-appcompat-v7', ':android-play-services'
+include ':android-api-16'
+include ':android-api-19'
+include ':android-api-21'
+//include ':android-appcompat-v7'
+include ':android-play-services'
