@@ -8,7 +8,7 @@
         android:minSdkVersion="15"
         android:targetSdkVersion="19"/>
 
-    <application android:name=".DeckardApplication">
+    <application>
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
